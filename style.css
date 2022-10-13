@@ -1,0 +1,123 @@
+* {box-sizing: border-box;}
+body 
+{
+  margin: 0;
+  background-color: #181414;
+}
+
+/*search bar*/
+.topnav {
+  overflow: hidden;
+  background-color: #181414;
+  height: 47.5px;
+}
+.topnav a {
+  float: right;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Vazirmatn', sans-serif;
+} 
+.topnav a:hover {
+  background-color: rgb(224, 24, 24);
+  color: white;
+}
+.topnav a.active {
+  background-color: rgb(211, 17, 17);
+  color: white;
+}
+.topnav .search-container {
+  float: left;
+}
+.topnav input[type=text] {
+  float: left;
+  padding: 6px;
+  background-color:rgb(59, 57, 57);
+  margin: 8px 0px 8px 8px;
+  font-size: 12px;
+  border-radius: 4px;
+  border: none;
+  font-family: 'Vazirmatn', sans-serif;
+  width: 200px;
+}
+.topnav .search-container button {
+  
+  padding: 5px 10px 5px 10px; /*top right bottom left*/
+  margin: 8px;
+  background: rgb(211, 17, 17);
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.topnav .search-container button:hover {
+  background: rgb(255, 93, 93);
+}
+/*end search bar*/
+
+/* Slider*/
+.mySlides {display: none;}
+.slider_img {margin-left: -182.52px;}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@keyframes fade {
+  from {opacity: .8} 
+  to {opacity: 1}
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+/*end Slider*/
+
+/*rows and columns*/
+.row > .column {
+  padding: 0 112px;
+}
+.row_1 > .column {
+  padding: 40px 115px;
+}
+.column {
+  float: left;
+  width:200px;
+  height:280px;
+}
+.mySlides {
+  display: none;
+}
+.cursor {
+  cursor: pointer;
+}
+img.hover-shadow {
+  transition: 0.3s;
+}
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(27, 27, 27, 0.2), 0 6px 20px 0 rgba(185, 8, 8, 0.363);
+}
+/*end rows and columns*/
+
+/*footer copyright*/
+.footer
+{
+  position:absolute;
+  bottom: -500px;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(177, 10, 10, 0.623);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: white;
+}
